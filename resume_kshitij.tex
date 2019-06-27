@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} 
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple',Grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[inline]{enumitem}
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{ {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{ #5}%
+    \ifthenelse{\equal{#6}{}}{}{ #6}%
+    \strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+\usepackage[scale=0.75]{geometry}
+\usepackage{fontawesome}
+ \usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\firstname{Kshitij} 
+\familyname{Agrawal} 
+
+%----------------------------------------------------------------------------------------
+%----------------------------------
+\begin{document}
+\makecvtitle \vspace{-0.8cm}
+\normalsize \faGithub\ {\href{https://github.com/07kshitij}{\ 07kshitij}} \hfill{}
+\normalsize \faHome {\href{https://www.codechef.com/users/kshitij_07}{\ \space kshitij\_07 (CodeChef)}} \hfill{}  
+\normalsize \faHome {\href{https://codeforces.com/profile/kshitij_07}{\ \space kshitij\_07 (Codeforces)}}\par
+\vspace{0.1cm}
+\normalsize \faEnvelope\ {\href{mailto:kshitijagrawal2607.com}{\ kshitijagrawal2607@gmail.com}}\\
+\vspace{-0.7cm}
+\section{Education}
+
+\cventry{2017--Current}{Bachelor of Technology,}{\textnormal{Indian Institute of Technology},}{Kharagpur}{}{}  
+\cventry{Major}{Electronics and Electrical Communication Engineering}{\hfill}{\textbf{GPA}}{\textbf{9.50 / 10.00}}{}  
+\cventry{Minor}{Computer Science and Engineering}{\hfill}{\textbf{GPA}}{\textbf{10.00 / 10.00}}{}  
+\cventry{2017}{Higher Secondary School Certificate Exam}\newline {Chhattisgarh Board of Secondary Education}{(CGBSE) }{}{}
+\cventry{}{\textbf{Deshbandhu School, Raipur}}{\hfill}{95.4 \%}{}{}
+
+\section{Projects}
+
+\cventry{December 2018}{\href{https://github.com/07kshitij/Calculator_pyqt}{PyQt based Scientific Calculator}}{\textsc{Kharagpur Winter of Code 2018}}{}{}{  
+\begin{itemize}
+\item Worked on handling erroneous inputs, added Backspace Functionality and Implemented plotting of graphs using \textbf{PyQtGraph} library.
+\end{itemize}}
+
+\cventry{January 2019}{\href{https://github.com/07kshitij/kshitij_07}{Django based Blog Application}}{}{}{}{
+\begin{itemize}
+\item Implemented a blog application which has features for adding, deleting and editing posts
+\item Developed other features like Upvoting, Downvoting and Commenting in a blog post.
+\end{itemize}}
+
+\cventry{March 2019}{Lawbrarian}{\textsc{OpenSoft 2019, IIT Kharagpur}}{}{}{
+\begin{itemize}
+\item A contributing member to the Inter Hall OpenSoft entry of the Web Application of a Legal Search Engine.
+\item The search engine uses Elastic Search, NLP and Graph Databases to quickly fetch details of a case given few keywords relating to it.
+\item Responsible for pre-processing the whole data set to extract key information points and building the Graph Database. 
+\end{itemize}}
+
+\section{Skills}
+
+\cvitem{Languages}{{C, C++, Python}}
+\cvitem{Libraries and Frameworks}{ Django, NetworkX}
+\cvitem{Others}{GNU Octave, MATLAB, \LaTeX, Git}
+
+\section{Scholastic Achievements}
+
+\cventry{2019}{\href{https://drive.google.com/drive/u/0/folders/1NvSc48xkg6PQ85bBXe8mKQh0blSHT67u}{Google KickStart:}}{}{Rank 488, 235 and 484 respectively in Round A, B and C}{Among over 5000 participants worldwide}{}
+\cventry{2019}{Google HashCode:}{}{India Rank 168}{Among 956 teams participating in the country}{}
+\cventry{2018}{}{}{Successfully got a \textbf{Department Change} from \textbf{Civil Engg.} to \textbf{Electronics and Electrical Communication Engg.} being amongst \href{https://drive.google.com/file/d/1MVFeKHUU36upne0rQBD7TjiqgQgH34pB/view?usp=sharing}{\textbf{top 15 CGPA holders}} at the end of 1st year}{}{}
+\cventry{2017}{JEE Advanced:}{}{AIR 2329}{In top 1.2 \% amongst more than 2,00,000 students}{}
+\cventry{2017}{JEE Main:}{}{AIR 854}{In top 0.08 \% amongst more than 11,00,000 students}{}
+\cventry{2017}{Kishore Vaigyanik Protsahan Yojana 'SX Stream'}{\textnormal{Scholar}}{:}{Scholarship Exam conducted by the Department of Science and Technology, Government of India}{}
+\cventry{2017}{}{}{Secured \textbf{10th position} in the Merit List of Class XII Examinations conducted by \textbf{Chhattisgarh Board of Secondary Education} amongst 2,50,000 students }{}{}
+
+\section{Courses Taken}
+
+\cvitem{}{Programming and Data Structures}
+\cvitem{}{Algorithms}
+\cvitem{}{Probability and Stochastic Process}
+\cvitem{}{Matrix Algebra}
+\cvitem{}{Introduction to Internet}
+
+\end{document}
+
+\grid
+\grid
+\grid
+\grid
+\grid
+\grid
+\grid
+\grid
